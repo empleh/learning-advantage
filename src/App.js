@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'react-awesome-button/dist/styles.css';
 import TopLeft from './TopLeft';
 import TopRight from './TopRight';
 import BottomLeft from './BottomLeft';
