@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TopLeft() {
+function Heading() {
     return (
         <div className="TopLeft">
             <h1>
@@ -12,4 +12,4 @@ function TopLeft() {
     );
 }
 
-export default TopLeft;
+export default Heading;

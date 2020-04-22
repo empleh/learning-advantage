@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import FullScreen from './FullScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import fontawesome from '@fortawesome/fontawesome';
+import unemployment from './images/unemployment.png';
+import earnings from './images/weekly-earnings.png';
 
-function BottomLeft() {
+fontawesome.library.add(faDollarSign);
+
+function Invest() {
     const [show, setShow] = useState(false);
     const expando = () => {
         setShow(true);
@@ -19,10 +24,17 @@ function BottomLeft() {
                 <h3>Invest in Yourself</h3>
             </div>
             <FullScreen show={show} from="FromBottomLeft" reverse="ReverseBottomLeft" close={() => setShow(false)}>
-                Graph for years of school to $$
+                <div className="details-container no-scroll">
+                    <a href="https://www.bls.gov/careeroutlook/2018/data-on-display/education-pays.htm" target="_blank">
+                        <img src={earnings} height={340} width={450} />
+                    </a>
+                    <a href="https://www.bls.gov/careeroutlook/2018/data-on-display/education-pays.htm" target="_blank">
+                        <img src={unemployment} height={340} width={450} />
+                    </a>
+                </div>
             </FullScreen>
         </>
     );
 }
 
-export default BottomLeft;
+export default Invest;

@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import 'react-awesome-button/dist/styles.css';
-import TopLeft from './TopLeft';
-import TopRight from './TopRight';
-import BottomLeft from './BottomLeft';
-import BottomRight from './BottomRight';
+import Heading from './Heading';
+import Happiness from './Happiness';
+import Invest from './Invest';
+import Ways from './Ways';
 
 function App() {
     return (
         <div className="App">
-            <TopLeft />
-            <TopRight />
-            <BottomLeft />
-            <BottomRight />
+            <Heading />
+            <Happiness />
+            <Invest />
+            <Ways />
         </div>
     );
 }
